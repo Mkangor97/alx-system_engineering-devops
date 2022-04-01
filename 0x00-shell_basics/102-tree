@@ -1,2 +1,2 @@
-echo 'mkdir -p welcome/to/school' >> 102-tree
-chmod u+x 102-tree
+#!/bin/bash
+echo -e'#!/bin/bash\nmkdir -p welcome/to/school' > 102-tree
