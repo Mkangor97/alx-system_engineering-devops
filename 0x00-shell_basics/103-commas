@@ -1,2 +1,2 @@
 #!/bin/bah
-ls -apm | sort -d
+nls -pam
