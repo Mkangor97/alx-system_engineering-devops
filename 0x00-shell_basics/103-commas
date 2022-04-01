@@ -1,2 +1,2 @@
-#!/bin/bah
-nls -pam
+#!?bin/bash
+#ls -apm | sort -d
