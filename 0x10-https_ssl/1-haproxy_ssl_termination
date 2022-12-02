@@ -39,11 +39,11 @@ frontend haproxy_balancer
     default_backend webservers
 
 frontend haproxy_balancer-https
-    bind *:443 ssl crt /etc/letsencrypt/live/www.dudegfa.tech/fullchain.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.mercykangor.tech/fullchain.pem
     http-request set-header X-Forwarded-Proto https
     default_backend webservers
 
 backend webservers
     balance roundrobin
     server 38103-web-01 54.157.163.124:80 check
-    server 38103-web-02 54.144.259.191:80 check
+    server 38103-web-02 54.144.250.191:80 check
