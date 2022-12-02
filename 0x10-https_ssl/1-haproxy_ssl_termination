@@ -39,7 +39,7 @@ frontend haproxy_balancer
     default_backend webservers
 
 frontend haproxy_balancer-https
-    bind *:443 ssl crt /etc/letsencrypt/live/www.mercykangor.tech/fullchain.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.mercykangor.tech.pem
     http-request set-header X-Forwarded-Proto https
     default_backend webservers
 
